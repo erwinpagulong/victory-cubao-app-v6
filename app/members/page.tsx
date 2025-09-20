@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Search, Filter, Plus, ChevronLeft, ChevronRight, ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import { Search, Filter, Plus, ChevronLeft, ChevronRight, ChevronLeftIcon, ChevronRightIcon, PlusIcon } from "lucide-react"
 import { AppSidebar } from "@/components/app-sidebar"
 import { SiteHeader } from "@/components/site-header"
 import {
@@ -107,8 +107,25 @@ export default function MembersPage() {
         <SiteHeader />
         <div className="flex flex-1 flex-col">
           <div className="@container/main flex flex-1 flex-col gap-2">
-            <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">              
+            <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">     
               <div className="px-4 lg:px-6">
+                {/* Header */}
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h1 className="text-2xl font-bold text-gray-900">Manage Members</h1>
+                    <p className="text-gray-500 mt-1">View and manage church members</p>
+                  </div>
+                  <Link 
+                    href="/members/add"
+                    className="inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-800 text-white font-medium rounded-lg transition-colors duration-200"
+                  >
+                    <PlusIcon />
+                    <span className="ml-2">Add Member</span>
+                  </Link>
+                </div>
+              </div>         
+              <div className="px-4 lg:px-6">
+                
                 {/* Member List */}
                 <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
                     <div className="px-6 py-4 border-b border-gray-200">

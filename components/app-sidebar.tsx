@@ -57,8 +57,8 @@ const data = {
       icon: IconChartBar,
     },
     {
-      title: "Projects",
-      url: "#",
+      title: "Events",
+      url: "/events",
       icon: IconFolder,
     },
     {
