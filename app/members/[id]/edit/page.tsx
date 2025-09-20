@@ -167,7 +167,7 @@ export default function EditMemberPage() {
                   >
                     <option value="Worship Team">Worship Team</option>
                     <option value="Youth Ministry">Youth Ministry</option>
-                    <option value="Children's Ministry">Children's Ministry</option>
+                    <option value="Childrens Ministry">Childrens Ministry</option>
                     <option value="Prayer Team">Prayer Team</option>
                     <option value="Outreach">Outreach</option>
                     <option value="Hospitality">Hospitality</option>
